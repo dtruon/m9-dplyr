@@ -6,12 +6,14 @@
 install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
-devtools::install_github("hadley/fueleconomy")
+devtools::install_github("hadley/fueleconomy", force = TRUE)
 
 # Require/library the fueleconomy package
+library(fueleconomy)
 
-
+View(vehicles)
 # Which Accura model has the best hwy MPG in 2015? (without method chaining)
+
 
 
 # Which Accura model has the best hwy MPG in 2015? (nesting functions)
